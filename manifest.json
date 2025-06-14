@@ -1,0 +1,29 @@
+
+{
+  "name": "متجر الجمال والأناقة",
+  "short_name": "متجر الجمال",
+  "description": "اكتشفوا عالماً من الجمال والأناقة مع مجموعتنا المتميزة من المكياج والعطور",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdf2f8",
+  "theme_color": "#ec4899",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/lovable-uploads/0da9cc01-5559-440a-9102-1c28fa7d67dc.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/lovable-uploads/0da9cc01-5559-440a-9102-1c28fa7d67dc.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "lifestyle"],
+  "lang": "ar",
+  "dir": "rtl"
+}
