@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAppCache } from '@/hooks/useAppCache';
@@ -92,7 +91,7 @@ const MobileSplash = () => {
             {/* Logo container - bigger and circular */}
             <div className="relative w-40 h-40 mx-auto bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center transform transition-all duration-700 hover:scale-110 animate-bounce-gentle shadow-2xl">
               <img 
-                src="/lovable-uploads/44d2a604-8d2c-498a-9c37-e89e541a86cb.png" 
+                src="https://imgtree.co/get/yuNT3t.png?v=876898985" 
                 alt="Style متجر الجمال والأناقة" 
                 className="w-32 h-32 object-contain rounded-full animate-fade-in-scale" 
               />

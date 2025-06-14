@@ -35,7 +35,6 @@ import { Trash2, Edit, Eye, Percent, EyeOff, Filter } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { useChangeLogger } from '@/hooks/useChangeLogger';
 import EditProductForm from './EditProductForm';
-import SearchBar from '@/components/SearchBar';
 import SubCategorySection from '@/components/SubCategorySection';
 import { ProductOption, Product } from '@/types';
 
@@ -530,9 +529,6 @@ const ProductsManagement = () => {
       {/* Search and Filter Section */}
       <div className="space-y-4">
         <div className="flex items-center gap-4">
-          <div className="flex-1">
-            <SearchBar searchQuery={searchQuery} onSearchChange={setSearchQuery} />
-          </div>
           <Button
             variant="outline"
             onClick={() => setShowFilters(!showFilters)}

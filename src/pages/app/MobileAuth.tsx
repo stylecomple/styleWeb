@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
@@ -119,7 +118,7 @@ const MobileAuth = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full blur opacity-30"></div>
             <div className="relative w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center">
               <img 
-                src={logoUrl || "/lovable-uploads/44d2a604-8d2c-498a-9c37-e89e541a86cb.png"} 
+                src={logoUrl || "https://imgtree.co/get/yuNT3t.png?v=876898985"} 
                 alt="Style" 
                 className="w-7 h-7 object-contain rounded-full"
               />
@@ -142,7 +141,7 @@ const MobileAuth = () => {
               <div className="absolute -inset-3 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-full blur opacity-30 animate-pulse"></div>
               <div className="relative w-20 h-20 mx-auto bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center animate-bounce-gentle">
                 <img 
-                  src={logoUrl || "/lovable-uploads/44d2a604-8d2c-498a-9c37-e89e541a86cb.png"} 
+                  src={logoUrl || "https://imgtree.co/get/yuNT3t.png?v=876898985"} 
                   alt="Style" 
                   className="w-16 h-16 object-contain rounded-full"
                 />

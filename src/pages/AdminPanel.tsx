@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
@@ -13,7 +12,6 @@ import UserManagement from '@/components/admin/UserManagement';
 import StatisticsPanel from '@/components/admin/StatisticsPanel';
 import DiscountManagement from '@/components/admin/DiscountManagement';
 import FeedbackManagement from '@/components/admin/FeedbackManagement';
-import AdminSettings from '@/components/admin/AdminSettings';
 import AddProductForm from '@/components/admin/AddProductForm';
 import CategoryManager from '@/components/admin/CategoryManager';
 import ExcelProductImport from '@/components/admin/ExcelProductImport';
@@ -238,11 +236,6 @@ const AdminPanel = () => {
                   <TabsContent value="feedback" className="space-y-6">
                     <h2 className="text-2xl font-bold">إدارة التقييمات</h2>
                     <FeedbackManagement />
-                  </TabsContent>
-
-                  <TabsContent value="settings" className="space-y-6">
-                    <h2 className="text-2xl font-bold">إعدادات النظام</h2>
-                    <AdminSettings />
                   </TabsContent>
                 </>
               )}

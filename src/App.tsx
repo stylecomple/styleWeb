@@ -1,9 +1,8 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { CartProvider } from "@/contexts/CartContext";
 import { ThemeProvider } from "@/contexts/ThemeContext";
@@ -40,7 +39,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <HashRouter>
         <AuthProvider>
           <CartProvider>
             <ThemeProvider>
@@ -49,7 +48,6 @@ const App = () => (
                   <Routes>
                     {/* Main route is now the mobile app */}
                     <Route path="/" element={<MobileSplash />} />
-                    
                     {/* Desktop Routes */}
                     <Route path="/desktop" element={<Index />} />
                     <Route path="/products" element={<Products />} />
@@ -59,7 +57,6 @@ const App = () => (
                     <Route path="/orders" element={<Orders />} />
                     <Route path="/admin" element={<AdminPanel />} />
                     <Route path="/owner-panel" element={<OwnerPanelPage />} />
-                    
                     {/* Mobile App Routes */}
                     <Route path="/app" element={<MobileSplash />} />
                     <Route path="/app/products" element={<MobileProducts />} />
@@ -73,7 +70,6 @@ const App = () => (
                     <Route path="/app/settings" element={<MobileSettings />} />
                     <Route path="/app/orders" element={<MobileOrders />} />
                     <Route path="/app/payment" element={<MobilePayment />} />
-                    
                     <Route path="*" element={<NotFound />} />
                   </Routes>
                 </CacheProvider>
@@ -81,7 +77,7 @@ const App = () => (
             </ThemeProvider>
           </CartProvider>
         </AuthProvider>
-      </BrowserRouter>
+      </HashRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
